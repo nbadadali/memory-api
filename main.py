@@ -25,7 +25,7 @@ EMBEDDING_DIM = int(os.getenv("EMBEDDING_DIM", "384"))  # 384 for all-MiniLM-L6-
 # ------------------------------------------------------------------------------------
 # DB connection
 # ------------------------------------------------------------------------------------
-conn = psycopg2.connect(DATABASE_URL)
+conn = psycopg2.connect(dsn=DATABASE_URL)
 
 # ------------------------------------------------------------------------------------
 # Embedding model
